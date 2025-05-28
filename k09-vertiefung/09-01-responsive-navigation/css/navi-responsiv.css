@@ -1,0 +1,121 @@
+/** =============================================
+  * HTML und CSS  
+  * Stylesheet für die Übungswebsite  
+  * 
+  * Modul navi-responsiv.css 
+  * wird in style.css per @import eingebunden
+============================================ **/ 
+
+
+/* === Eine vertikale Navigation für schmale Viewports === */
+.site-nav {
+    background-color: var(--kontrastfarbe);
+    color: var(--basisfarbe); 
+    box-shadow: 0 2px 6px var(--schattenfarbe);
+    margin-bottom: 2rem; 
+}
+.site-nav .inside { 
+    padding: 0;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.site-nav a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--kontrastfarbe);
+    color: var(--basisfarbe); 
+    padding: 0.5rem 1rem;
+}
+
+.site-nav a[aria-current],
+.site-nav a:hover, 
+.site-nav a:focus {
+    background-color: var(--akzentfarbe);
+    color: var(--basisfarbe); 
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+.site-nav a:active {
+    background-color: var(--linkfarbe-active);
+    color: var(--basisfarbe)
+}
+
+
+/* === Menübutton per CSS gestalten */
+.menubutton {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    background: inherit;
+    color: var(--basisfarbe); 
+    font: inherit; 
+    text-align: center;
+    padding: 0.5rem 1rem;
+    /* Formularbutton vererbt border 1px solid */
+    border: 1px solid var(--kontrastfarbe);
+    margin: 0;
+}
+.menubutton::before {
+    content: url("../../../temp/bilder/menuburger.svg");
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+}
+
+
+/* === Navigation per CSS ein- und ausblenden */
+
+[aria-expanded="false"] + ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+[aria-expanded="true"] + ul {
+    transition: opacity 0.3s linear;
+}
+[aria-expanded="true"].menubutton::before {
+    content: url("../../../temp/bilder/menuclose.svg"); 
+}
+
+
+/* === Eine horizontale Navigation für breitere Viewports */
+
+@media screen and (min-width: 640px) {
+    
+    .menubutton { display: none !important; }
+
+    /* .site-nav { position: sticky; top: 0; } */
+    .site-nav .inside { padding: 0 1rem; } 
+    
+    .site-nav ul {
+        position: static; 
+        visibility: visible;
+        opacity: 1;
+
+        
+        flex-flow: row; 
+        padding: 0; 
+    } 
+    .site-nav li {
+        flex: 1; 
+        max-width: 7rem;
+        text-align: center;
+        border-left: 1px solid var(--basisfarbe); 
+    }
+    .site-nav li:last-child {
+        border-right: 1px solid var(--basisfarbe);
+    }
+
+} /* Ende @media */ 
+
+
+/* eof */
+
+
