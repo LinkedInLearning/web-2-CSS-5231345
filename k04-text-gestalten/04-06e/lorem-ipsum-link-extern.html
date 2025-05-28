@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  
+  <title>Links gestalten (Pseudoklassen) - Videokurs Webtechniken lernen</title>  
+  
+  <style>
+      html { background-color: whitesmoke; }
+
+      body { 
+        font-family: system-ui, sans-serif; 
+        line-height: 1.5;
+        background-color: white;
+        color: black; 
+        max-width: 60ch;
+        min-height: 100vh;
+        padding: 2rem; 
+        margin: 1rem auto; 
+      }
+      h1 { margin-top: 0; }
+      
+      /* Links - Unterstreichung */
+      a {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-color: currentColor; 
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.25em;
+      }
+
+      /* Links - Zustände */  
+      a:link { color: #05a; }
+      a:visited { color: #50a; }
+
+      a:hover, a:focus { 
+        color: #a50; 
+        text-decoration-style: dashed;
+      } 
+      a:active { 
+        color: #a05;  
+        text-decoration-style: solid;
+      }    
+
+      /* Links - extern */
+      a[target="_blank"]::after {
+        content: "\00A0\2197"; 
+      }
+      
+             
+  </style>
+    
+</head>
+
+<body>
+      
+  <h1>Lorem Ipsum unterwegs</h1>
+  
+  <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien, leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.</p>
+  
+  <p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthografisches Leben.</p>
+  
+  <h2>In die weite Welt hinaus</h2>
+
+  <p>Eines Tages aber beschloss eine kleine Zeile Blindtext, ihr Name war <a href="https://de.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Lorem Ipsum</a>, hinauszugehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikola, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg.</p>
+
+  <p>Als das Blindtextchen die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. Wehmütig lief ihm eine rhetorische Frage über die Wange, dann setzte es seinen Weg fort.</p>
+
+  <h2>Unterwegs und gefangen</h2>
+
+  <p>Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme, wäre sie zigmal umgeschrieben worden, und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und", und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren.</p> 
+
+  <p>Doch alles gute Zureden konnte es nicht überzeugen, und so dauerte es nicht lange, bis ihm ein paar heimtückische Werbetexter auflauerten, es mit Longe und Parole betrunken machten und es dann in ihre Agentur schleppten, wo sie es wieder und wieder in ihren Projekten einsetzten.</p>
+
+  <p>Und wenn es nicht geändert wurde, dann nutzen sie's noch heute.</p>
+  
+    
+  </body>  
+</html>
