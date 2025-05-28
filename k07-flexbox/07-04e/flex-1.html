@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de" id="top">
+ <!-- 07-04e -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox - Flexibilität – Videokurs Webtechniken lernen</title>
+
+    <style>
+
+      * { box-sizing: border-box; }    
+
+      body {
+        font-family: sans-serif;
+        background-color: white; 
+        color: black; 
+        max-width: 600px; 
+        margin: 5rem auto;         
+      }      
+      
+      ul { 
+        display: flex; 
+        /* Bei Zeilenumbruch wird die gesamte zweite Zeile gefüllt */
+        flex-wrap: wrap; 
+        
+        background-color: gainsboro;        
+        list-style: none;
+        padding: 0; 
+        margin: 0; 
+      }
+
+      li {
+        /* CSS für die Flexibilität von Flex-Items */
+        flex: 1; 
+
+        text-align: center; 
+        padding: 1rem; 
+      }
+
+      li:nth-child(1) { background: red; color: white; }
+      li:nth-child(2) { background: orange; color: black; }      
+      li:nth-child(3) { background: yellow; color: black; }            
+      li:nth-child(4) { background: green; color: white; } 
+      
+    </style>
+    
+  </head>
+
+  <body>
+    
+      <ul>
+        <li>Fließrichtung</li>	
+        <li>Ausrichtung</li>	
+        <li>Flexibilität</li>	
+        <li>Reihenfolge</li>	
+      </ul>	
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de" id="top">
+ <!-- 07-03e -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox - margin:auto – Videokurs Webtechniken lernen</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+
+      /* tangerine-regular - latin */
+      @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Tangerine';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/tangerine-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      }
+
+      * { box-sizing: border-box; }    
+
+      body {
+        font-family: system-ui, sans-serif;
+        background-color: floralwhite; 
+        min-height: 100vh; 
+        color: #333; 
+        margin: 0;        
+        
+        /* 1. body wird Flex-Container */
+        display: flex;
+      }      
+
+      blockquote {	
+        font-family: 'Tangerine', cursive; 
+        font-size: 4rem;
+        text-align: center;
+        background: #f5efe0;
+        padding: 1rem;	
+        border: 0.25rem solid #e1dbc0; 
+        border-radius: 0.25rem; 
+        
+        /* 2. Flex-Item wird zentriert */
+        margin: auto; 
+      }   
+      
+      blockquote p {
+        margin: 0; 
+
+      }
+
+    </style>
+    
+  </head>
+
+  <body>
+  
+    <blockquote>
+      <p>It's a kind of magic ...</p>
+    </blockquote>
+
+
+  </body>
+
+</html>

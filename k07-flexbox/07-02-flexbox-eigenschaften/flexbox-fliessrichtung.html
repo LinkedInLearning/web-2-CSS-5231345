@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de" id="top">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox - Fließrichtung – Videokurs Webtechniken lernen</title>
+
+    <style>
+      * { box-sizing: border-box; }    
+
+      body {
+        font-family: sans-serif;
+        background-color: white; 
+        color: black; 
+        max-width: 600px; 
+        margin: 5rem auto;         
+      }      
+
+      h1 { 
+        text-align: center; 
+        margin-bottom: 3rem;
+      }
+      
+      ul { 
+        background-color: gainsboro;        
+        list-style: none;
+        padding: 0; 
+        margin: 0; 
+      }
+
+      li {
+        text-align: center; 
+        padding: 1rem; 
+      }
+
+      li:nth-child(1) { background: red; color: white; }
+      li:nth-child(2) { background: orange; color: black; }      
+      li:nth-child(3) { background: yellow; color: black; }            
+      li:nth-child(4) { background: green; color: white; } 
+      
+      /* CSS für Flexbox ab hier einfügen */ 
+      ul { 
+        display: flex;
+
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+
+        /* flex-wrap: nowrap;  */
+        /* flex-wrap: wrap;  */
+
+        /* Kurzschreibweise */
+        /* flex-flow: row nowrap */
+        /* flex-flow: row wrap */
+
+      } 
+
+
+    </style>
+    
+  </head>
+
+  <body>
+      
+      <h1>Layouten mit Flexbox</h1>    
+      
+      <ul>
+        <li>Fließrichtung</li>	
+        <li>Ausrichtung</li>	
+        <li>Flexibilität</li>	
+        <li>Reihenfolge</li>	
+      </ul>	
+
+  </body>
+</html>

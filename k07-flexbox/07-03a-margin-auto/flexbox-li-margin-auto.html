@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de" id="top">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flexbox - gap und margin:auto – Videokurs Webtechniken lernen</title>
+
+    <style>
+      * { box-sizing: border-box; }    
+
+      body {
+        font-family: sans-serif;
+        min-height: 100vh;
+        background-color: white; 
+        color: black; 
+        max-width: 600px; 
+        margin: 1rem auto;     
+      }      
+
+      h1 { 
+        text-align: center; 
+        margin-bottom: 3rem;
+      }
+       
+      ul { 
+        background-color: gainsboro;
+
+        display: flex;
+        /* CSS für Zwischenraum */
+        
+        list-style: none;
+        padding: 0; 
+        margin: 0;
+      }
+
+      li {
+        text-align: center; 
+        padding: 1rem; 
+      }
+
+      li:nth-child(1) { background: red; color: white; }
+      li:nth-child(2) { background: orange; color: black; }      
+      li:nth-child(3) { background: yellow; color: black; }            
+      li:nth-child(4) { 
+        background: green; 
+        color: white; 
+        /* CSS zur Ausrichtung des Listenelements */
+      } 
+
+    </style>
+    
+  </head>
+
+  <body>
+
+      <h1>Layouten mit Flexbox</h1> 
+    
+      <ul>
+        <li>Fließrichtung</li>	
+        <li>Ausrichtung</li>	
+        <li>Flexibilität</li>	
+        <li>Reihenfolge</li>	
+      </ul>	
+
+  </body>
+</html>
