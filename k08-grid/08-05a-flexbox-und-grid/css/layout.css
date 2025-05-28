@@ -1,0 +1,101 @@
+/** =============================================
+  * Videokurs Webtechniken lernen   
+  * Stylesheet für die Übungswebsite  
+  * 08-05a (Stand 08-02e)
+  * Modul layout.css 
+  * Seitenlayout und Layoutbereiche 
+  * wird in style.css per @import eingebunden
+  =========================================== **/
+
+/** 
+  * Breite und Grid-Layout für Layoutbereiche
+  */  
+
+.inside {
+  max-width: 37.5rem; 
+  
+  padding: 0 1rem; 
+  margin: auto; 
+}
+
+@media screen and (min-width: 600px) {
+  
+  .infoboxen .inside {
+    max-width: 60rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+  }
+
+  .kundenstimmen .inside {
+    max-width: 60rem; 
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .kundenstimmen h2:first-child { 
+
+    /* Grid-Item über die gesamte Breite */
+    grid-column: 1/-1;
+
+  } 
+
+
+} /* Ende @media */ 
+
+
+/** 
+  * Header gestalten  
+  */
+
+.site-header {
+  padding: 2rem 0;
+}
+
+.site-header p {
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+
+/** 
+  * Navigation => eigenes Stylesheet
+  */
+
+
+/** 
+  * Inhaltsbereich gestalten 
+  */  
+
+.site-content {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+
+/** 
+  * Fußbereich gestalten 
+  */
+
+.site-footer {
+  text-align: right; 
+  background-color: var(--kontrastfarbe);
+  color: var(--basisfarbe);
+  font-size: smaller;
+  padding: 0.5rem 0;
+}
+.site-footer a {
+  color: var(--basisfarbe);
+  text-decoration-line: none;
+}
+.site-footer a:hover, 
+.site-footer a:focus {
+  text-decoration-line: underline; 
+  text-decoration-style: solid; 
+}
+
+/* Ende layout.css  */

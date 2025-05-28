@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- 08-04a -->
+<html lang="de">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  
+  <title>Die Grid-Zauberformel: Responsives Grid ohne Media Query - Videokurs Webtechniken lernen</title>  
+  
+  <style>
+    
+    * { box-sizing: border-box; }
+
+    body {
+      display: flex; 
+      flex-flow: column;
+
+      font-family: system-ui, sans-serif;
+      
+      max-width: 37.5rem; 
+      min-height: 100vh;
+      
+      line-height: 1.5;
+      padding: 1rem 2rem; 
+      margin: 0 auto; 
+    }
+
+    h1, h2, h3, p, ul { margin-top: 0; }
+    h1, h2, h3 { 
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    ul { 
+      list-style-type: none; 
+      padding: 0;
+      margin: 0;
+    }
+
+    main {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      background-color: whitesmoke;
+      padding: 1rem; 
+      border-radius: 0.5rem; 
+      margin-top: auto;
+    }
+
+  
+
+    /* Mitgliederliste mit responsivem Rasterlayout ohne Media Query */
+    .mitglieder { 
+      list-style: none; 
+      padding: 0; 
+      margin: 0; 
+    }
+
+    .mitglied { 
+      text-align: center;
+      padding: 0.5rem;
+      border: 1px solid rebeccapurple; 
+    }
+
+    .mitglied h3 { 
+      background: rebeccapurple; 
+      color: white; 
+      font-size: 1.125rem;
+      padding: 0.25rem; 
+      margin: -0.5rem -0.5rem 1rem -0.5rem
+    }    
+
+  </style>
+    
+</head>
+
+<body>
+
+  <header>
+          
+    <h1>Layouten mit Grid</h1>
+  
+    <p>Grid ermöglicht ein responsives Rasterlayout ohne Media Query. Besser geht's nicht.</p>
+  
+  </header>
+
+
+  <main>
+    <section class="team">
+
+      <h2>Das Team</h2>
+
+      <ul class="mitglieder">
+        <li class="mitglied">
+          <h3>Autor</h3> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit sed nisi lobortis vestibulum non et orci.</p>
+        </li> 
+
+        <li class="mitglied">
+          <h3>Fachlektorin</h3> 
+          <p>Nunc nisi justo, placerat id elit eget, ullamcorper dictum mauris. Donec molestie, orci et tristique lacinia, nisl dolor volutpat urna, at euismod eros orci ut massa.</p>
+        </li> 
+
+        <li class="mitglied">
+          <h3>Lektorat</h3> 
+          <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nunc neque, ullamcorper quis mi non,</p>
+        </li> 
+
+         <li class="mitglied">
+          <h3>Korrektorat</h3> 
+          <p>Duis cursus, quam id elementum blandit, turpis nisi consectetur velit, dignissim dapibus lectus nunc nec libero. </p>
+        </li> 
+
+        <li class="mitglied">
+          <h3>Herstellung</h3> 
+          <p>Sed purus quam, molestie eu tortor sagittis, ultricies semper tortor. Vivamus venenatis imperdiet mauris nec rutrum. </p>
+        </li> 
+
+        <li class="mitglied">
+          <h3>Vertrieb</h3> 
+          <p>Cras vel nibh varius, molestie est ac, iaculis erat. Suspendisse convallis massa eget erat porttitor, eu dictum nibh vestibulum. </p>
+        </li> 
+
+      </ul>
+    </section>                 
+  </main>
+
+  <footer>
+
+    Dies ist der  Footer. 
+
+  </footer>
+
+  </body>  
+</html>

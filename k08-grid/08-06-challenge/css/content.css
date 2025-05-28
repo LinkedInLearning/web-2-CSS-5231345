@@ -1,0 +1,80 @@
+/** =============================================
+  * Videokurs Webtechniken lernen   
+  * Stylesheet für die Übungswebsite  
+  * 
+  * Modul content.css 
+  * Gestaltung der Inhalte   
+  * wird in style.css per @import eingebunden
+  =========================================== **/
+
+/** 
+  * Linkzustände und externe Links im Inhaltsbereich  
+  */  
+
+.site-content a:link { color: var(--linkfarbe-link); }
+.site-content a:visited { color: var(--linkfarbe-visited); }
+.site-content a:hover, .site-content a:focus { color: var(--linkfarbe-hover-focus); }
+.site-content a:active { color: var(--linkfarbe-active); }
+
+.site-content a[target="_blank"]::after { content: "\00A0\2197"; }
+
+
+/** 
+  * Links als Call to Action 
+  */  
+
+a.call-to-action {
+  display: block; 
+  max-width: 10rem; 
+  text-decoration: none; 
+
+  padding: 0.5rem 1rem; 
+  border: 1px solid currentColor;
+  margin-inline: auto; 
+}
+a.call-to-action:hover, a.call-to-action:focus {
+  background-color: var(--akzentfarbe); 
+  color: var(--basisfarbe); 
+  border: 1px solid var(--akzentfarbe); 
+}
+a.call-to-action:active {
+  background-color: var(--linkfarbe-active); 
+  color: var(--basisfarbe); 
+  border: 1px solid var(--linkfarbe-active); 
+}
+
+
+/** 
+  * Abschnitt Infoboxen 
+  */
+
+.infoboxen {
+  background-color: var(--hintergrund-hell);
+  padding: 3rem 1rem 2rem 1rem;
+  margin-block: 2rem;
+}
+.infobox {
+  display: flex;
+  flex-flow: column;
+  
+  text-align: center;
+  background-color: var(--basisfarbe);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.infobox :last-child {
+	margin-top: auto;
+}
+
+/** 
+  * Abschnitt Kundenstimmen 
+  */
+.kundenstimme {
+  background-color: var(--grau-sehr-hell);
+  color: var(--kontrastfarbe); 
+  padding: 1rem; 
+  border-left: 5px solid var(--akzentfarbe); 
+  margin-bottom: 1rem; 
+} 
+
+/* Ende content.css */
