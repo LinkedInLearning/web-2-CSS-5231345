@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- 02-03 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Pseudoklassen für Kindelemente – Videokurs Webtechniken lernen</title>
+  
+  <style>
+
+      html { background-color: whitesmoke; }
+  
+      body { 
+          font-family: system-ui, sans-serif;
+          line-height: 1.5; 
+          background-color: white;
+          color: black; 
+          max-width: 600px;
+          min-height: 100vh; 
+          padding: 2rem; 
+          margin: 1rem auto; 
+      }
+      
+      nav { 
+        background-color: #333;
+        color: white; 
+        margin-top: 2rem; 
+      }
+
+      nav > ul { 
+        display: flex;
+        list-style-type: none;
+        padding: 0; 
+        margin: 0; 
+      }
+      nav a {
+        display: block;
+        text-decoration: none;
+        color: white; 
+        padding: 0.5rem 1rem;
+      }
+
+      /* Ersten bzw. letzten Menüpunkt hervorheben */
+      /* nav li:first-child a { background-color: #07b; color: white; }  */
+      /* nav li:last-child a { background-color: #07b; color: white; }  */
+      
+      /* Bestimmtes Kindelement hervorheben (Zahl, (un)gerade) */
+      /* nav li:nth-child(2) a { background-color: #07b; color: white; } */
+      /* nav li:nth-child(3) a { background-color: #07b; color: white; } */
+      /* nav li:nth-child(even) a { background-color: #07b; color: white; } */
+  
+  </style>
+  
+
+</head>
+
+<body>
+
+  <h1>Pseudoklassen für Kindelemente</h1>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Startseite</a></li>
+      <li><a href="#">Projekte</a></li>
+      <li><a href="#">Über uns</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </nav>
+
+</body>
+
+</html>

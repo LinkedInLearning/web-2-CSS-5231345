@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- 01-09 -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rahmenlinien gestalten mit border-style - Videokurs Webtechniken lernen</title>
+
+    <style>
+
+        body {
+            font-family: sans-serif;
+            padding: 2rem; 
+            margin: 0 auto; 
+        }
+
+        div.grid { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem; 
+        } 
+
+        div[style] {
+            background-color: whitesmoke;
+            border: 0.5rem solid #07b; 
+            padding: 1rem; 
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace; 
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="grid">
+        <div style="border-style: solid"><code>border-style: solid</code></div>
+        <div style="border-style: dashed"><code>border-style: dashed</code></div>
+        <div style="border-style: dotted"><code>border-style: dotted</code></div>
+        <div style="border-style: double;"><code>border-style: double</code></div>
+        <div style="border-style: groove"><code>border-style: groove</code></div>
+        <div style="border-style: ridge"><code>border-style: ridge</code></div>
+        <div style="border-style: inset"><code>border-style: inset</code></div>
+        <div style="border-style: outset"><code>border-style: outset </code></div>
+    </div>
+
+</body>
+</html>

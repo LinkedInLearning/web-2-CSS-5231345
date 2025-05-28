@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<!-- 02-08 -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Solution: Liste mit Zebrastreifen gestalten – Videokurs Webtechniken lernen</title>
+    
+    <style>
+    
+      html { background-color: whitesmoke; }
+
+      body {
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        background-color: white;
+        color: black; 
+        max-width: 600px;
+        min-height: 100vh;
+        padding: 2rem; 
+        margin: 1rem auto; 
+      }
+
+      /* Solution */
+      ol {
+        list-style-position: inside;
+        padding-left: 0; 
+        border-top: 1px solid steelblue; 
+        border-bottom: 1px solid steelblue; 
+      }
+
+      li {
+        background-color: lightsteelblue;
+        padding: 1rem; 
+      }
+
+      li:nth-child(even) {
+        background-color: whitesmoke;
+      }
+       
+
+    </style>
+    
+  </head>
+
+  <body>
+
+    <h1>Eine Liste mit Zebrastreifen</h1>
+
+    <p>Die folgende Liste zeigt die Filme in diesem Kapitel:</p>
+    
+    <ol>
+      <li>Einfache Selektoren: HTML-Elemente, Sternchen *, Klassen und IDs</li>
+      <li>DOM: Hierarchie der HTML-Elemente und Nachfahrenselektoren</li>
+      <li>Selektoren zum Auswählen von Kindelementen</li>
+      <li>Attributselektoren haben eckige Klammern</li>
+      <li>Weitere Selektoren und Quellen zum Nachschlagen</li>
+      <li>Spezifität: Einige Selektoren sind wichtiger als andere</li>
+      <li>Challenge: Eine Liste mit Zebrastreifen</li>
+      <li>Solution: Eine Liste mit Zebrastreifen</li>
+    </ol>
+
+  </body>
+
+</html>

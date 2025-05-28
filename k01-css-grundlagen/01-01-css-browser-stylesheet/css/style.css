@@ -1,0 +1,192 @@
+/* Stylesheet für die Übungswebsite */
+/* 01-01 (Stand 09-03, CSS-Regeln in sinnvoller Reihenfolge */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  max-width: none; 
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.inside {
+  max-width: 600px; 
+  padding: 0 1rem; 
+  margin: auto; 
+}
+
+
+/* Stile für die Hyperlinks */
+a {
+  text-decoration-line: underline; 
+  text-decoration-style: solid; 
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 0.25em; 
+} 
+a:hover, a:focus {
+  text-decoration-style: dashed; 
+}
+
+
+/* Stile für den Header */
+.site-header {
+  padding: 2rem 0;
+}
+
+.site-header p {
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+
+/* Stile für die Navigation */
+.site-nav {
+  background-color: black;
+  padding: 0; 
+  margin-bottom: 2rem; 
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.site-nav li {
+  flex: 1; 
+  max-width: 7rem;
+  border-left: 1px solid white; 
+}
+.site-nav li:last-child {
+  border-right: 1px solid white; 
+}
+
+.site-nav a {
+  display: block; 
+  color: white; 
+  text-decoration-line: none;
+  text-align: center;
+  padding: 0.5rem 1rem; 
+}
+.site-nav a[aria-current],
+.site-nav a:hover, 
+.site-nav a:focus {
+  background-color: #07b;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+
+/* Stile für den Inhalt */
+.site-content {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  line-height: normal;
+  font-weight: 500;
+}
+
+/* Flexible Grafiken  */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Beschriftungen und Zitate ohne Abstände */
+figure, blockquote  { 
+  margin: 0;
+}
+/* Nur wenn figcaption eine Bildbeschriftung ist */
+figure:has(img) figcaption {
+  text-align: center;
+  font-size: smaller;
+  background-color: #cde;
+  padding: 0.5rem 1rem;
+}
+
+/* Stile für den Abschnitte auf der Startseite */
+.infoboxen {
+  background-color: #def;
+  padding: 1rem;
+  margin-block: 2rem;
+}
+.infobox {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kundenstimme {
+  background-color: whitesmoke;
+  color: black; 
+  padding: 1rem; 
+  border-left: 5px solid #07b; 
+  margin-bottom: 1rem; 
+} 
+
+
+/* Stile für das Formular */
+form {
+  background-color: whitesmoke;
+  padding: 1rem;
+}
+label { 
+  display: block; 
+  color: dimgray; 
+  cursor: pointer;
+}
+form div { 
+  margin-bottom: 1rem; 
+}
+input, textarea {
+  border: 1px solid lightgray;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5rem; 
+}
+button {
+  background-color: white;
+  color: black; 
+  font-size: inherit;
+  padding: 0.5rem;
+  border: 1px solid lightgray; 
+  cursor: pointer;
+}
+button:hover, 
+button:focus {
+  background-color: #07b;
+  border: 1px solid #07b; 
+  color: white; 
+}
+
+
+/* Stile für den Footer */
+.site-footer {
+  text-align: right; 
+  background-color: black;
+  color: white;
+  font-size: smaller;
+  padding: 0.5rem 0;
+}
+.site-footer a {
+  color: white;
+  text-decoration-line: none;
+}
+.site-footer a:hover, 
+.site-footer a:focus {
+  text-decoration-line: underline; 
+  text-decoration-style: solid; 
+}
+
+/* Ende style.css */

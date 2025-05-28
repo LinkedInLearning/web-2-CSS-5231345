@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<!-- 01-09 -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rahmenlinien gestalten mit border-radius - Videokurs Webtechniken lernen</title>
+
+    <style>
+
+        * { box-sizing: border-box; }
+
+        body {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem; 
+
+            font-family: sans-serif;
+            padding: 2rem; 
+            margin: 0 auto; 
+        }
+
+        div {
+            background-color: whitesmoke;
+            padding: 2rem 1rem;    
+
+            /* vertikale Zentrierung im div per Flexbox */ 
+            display: flex;
+            align-self: center;             
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+        }
+
+        .rahmenlinie { 
+            border: 0.5rem solid #07b; 
+        }
+        .gleich { 
+            border-radius: 1rem; 
+        }
+        /* links oben, rechts oben, rechts unten und links unten */ 
+        .verschieden { 
+            border-radius: 4px 96px 24px 48px; 
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="rahmenlinie gleich">
+        <code>border-radius: 1rem</code>
+    </div>
+    <div class="gleich"><code>border-radius: 1rem</code></div>
+
+    <div class="rahmenlinie verschieden"><code>border-radius: 4px 96px 24px 48px</code></div>
+    <div class="verschieden"><code>border-radius: 4px 96px 24px 48px</code></div>
+
+</body>
+</html>
