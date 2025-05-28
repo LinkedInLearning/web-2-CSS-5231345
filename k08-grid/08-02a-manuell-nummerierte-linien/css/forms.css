@@ -1,0 +1,49 @@
+/** =============================================
+  * Videokurs Webtechniken lernen   
+  * Stylesheet für die Übungswebsite  
+  * 
+  * Modul forms.css 
+  * Gestaltung für Formulare    
+  * wird in style.css per @import eingebunden
+  =========================================== **/
+
+
+form {
+  background-color: var(--grau-sehr-hell);
+  padding: 1rem;
+}
+label { 
+  display: block; 
+  color: var(--grau-dunkel); 
+  cursor: pointer;
+}
+form div { 
+  margin-bottom: 1rem; 
+}
+input, textarea {
+  border: 1px solid var(--grau-hell);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5rem; 
+}
+button {
+  background-color: var(--basisfarbe);
+  color: var(--kontrastfarbe); 
+  font-size: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--grau-hell); 
+  cursor: pointer;
+}
+button:hover, 
+button:focus {
+  background-color: var(--akzentfarbe);
+  border: 1px solid var(--akzentfarbe); 
+  color: var(--basisfarbe); 
+}
+button:active {
+  background-color: var(--linkfarbe-active);
+  color: var(--basisfarbe); 
+  border: 1px solid var(--linkfarbe-active); 
+}
+
+/* Ende forms.css */

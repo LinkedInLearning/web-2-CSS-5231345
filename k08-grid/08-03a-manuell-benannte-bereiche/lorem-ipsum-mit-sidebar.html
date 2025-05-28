@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  
+  <title>Grid-Items manuell platzieren: benannte Grid-Bereiche - Videokurs Webtechniken lernen</title>  
+  
+  <style>
+    
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      
+      max-width: 60ch; 
+      min-height: 100vh;
+      
+      line-height: 1.5;
+      padding: 1rem; 
+      margin-inline: auto; 
+    }
+
+    h1, h2, h3, p, ul { margin-top: 0; }
+    h1, h2, h3 { 
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    ul { 
+      list-style-type: "\2192\00a0"; 
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    ul li::marker { color: dimgrey; } 
+
+    a {
+      color: dimgrey;      
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-color: lightblue;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
+    }
+    a:hover, a:focus { text-decoration-style: dashed; color: black; }
+    a:active { text-decoration-style: solid; }
+    a[target="_blank"]::after { content: "\00A0\2197"; }    
+
+    main {
+      margin-bottom: 2rem;
+    }
+
+    aside {
+      padding: 1rem; 
+      border-block: 1px solid gainsboro; 
+      margin-block: 2rem;
+    }
+
+    footer {
+      background-color: whitesmoke;
+      padding: 1rem; 
+      border-radius: 0.5rem; 
+    }
+
+    @media screen and (min-width: 800px) {
+
+      body { 
+        max-width: 100ch; 
+
+        display: grid;
+        
+
+      }
+
+    } /* Ende @media */
+    
+  </style>
+    
+</head>
+
+<body>
+
+  <header>
+          
+    <h1>Layouten mit Grid</h1>
+  
+    <p>Zur Platzierung von Grid-Items können Sie auch <em>benannte Grid-Bereiche</em> (engl. <em lang="en">grid-area</em>) mit aussagekräftigen Namen nutzen. </p>
+  
+  </header>
+
+
+  <main>
+
+      <article>
+          
+        <h2>Lorem Ipsum unterwegs</h2>
+        
+        <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien, leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.</p>
+        
+        <p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthografisches Leben.</p>
+
+        <h3>In die weite Welt hinaus</h3>
+      
+        <p>Eines Tages aber beschloss eine kleine Zeile Blindtext, ihr Name war <em>Lorem Ipsum</em>, hinauszugehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikola, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg.</p>
+      
+        <p>Als das Blindtextchen die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. Wehmütig lief ihm eine rhetorische Frage über die Wange, dann setzte es seinen Weg fort.</p>
+      
+        <h3>Unterwegs und gefangen</h3>
+      
+        <p>Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme, wäre sie zigmal umgeschrieben worden, und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und", und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren.</p> 
+      
+        <p>Doch alles gute Zureden konnte es nicht überzeugen, und so dauerte es nicht lange, bis ihm ein paar heimtückische Werbetexter auflauerten, es mit Longe und Parole betrunken machten und es dann in ihre Agentur schleppten, wo sie es wieder und wieder in ihren Projekten einsetzten.</p>
+      
+        <p>Und wenn es nicht geändert wurde, dann nutzen sie's noch heute.</p>
+
+      </article> 
+
+    </main>
+  
+
+    <aside>
+
+      <h2>Linklisten</h2>
+
+      <section class="tools">
+
+          <h3>Tools</h3>
+
+          <ul>
+            <li><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopen">VS Code</a></li>
+            
+            <li><a href="https://www.blindtextgenerator.de/" target="_blank" rel="noreferrer noopen">Blindtextgenerator</a></li>         
+            
+            <li><a href="https://validator.w3.org/" target="_blank" rel="noreferrer noopen">HTML-Validator</a></li>
+          </ul>     
+
+        </section>
+
+        <section class="referenzen">
+
+          <h3>Referenzen</h3>
+
+          <ul>
+            <li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" target="_blank" rel="noreferrer noopen">HTML-Elemente</a></li>
+            
+            <li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Attributes" target="_blank" rel="noreferrer noopen">HTML-Attribute</a></li>
+
+            <li><a href="https://wiki.selfhtml.org/wiki/Grafik/Farbe/Farbpaletten#Farbnamen" target="_blank" rel="noreferrer noopen">Farbnamen</a></li>
+          </ul>
+
+        </section>        
+      
+    </aside>     
+
+
+  <footer>
+
+    Dies ist der  Footer. 
+
+  </footer>
+
+  </body>  
+</html>
