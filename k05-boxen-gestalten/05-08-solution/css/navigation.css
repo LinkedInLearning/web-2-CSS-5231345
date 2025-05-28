@@ -1,0 +1,51 @@
+/** =============================================
+  * Videokurs Webtechniken lernen   
+  * Stylesheet für die Übungswebsite  
+  * 
+  * Modul navigation.css 
+  * Gestaltung der Navigation  
+  * wird in style.css per @import eingebunden
+  =========================================== **/
+
+.site-nav {
+  background-color: var(--kontrastfarbe);
+  padding: 0; 
+  margin-bottom: 2rem; 
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.site-nav li {
+  flex: 1; 
+  max-width: 7rem;
+  border-left: 1px solid var(--basisfarbe); 
+}
+.site-nav li:last-child {
+  border-right: 1px solid var(--basisfarbe); 
+}
+
+.site-nav a {
+  display: block; 
+  color: var(--basisfarbe); 
+  text-decoration-line: none;
+  text-align: center;
+  padding: 0.5rem 1rem; 
+}
+.site-nav a[aria-current],
+.site-nav a:hover, 
+.site-nav a:focus {
+  background-color: var(--akzentfarbe);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+.site-nav a:active {
+  background-color: var(--linkfarbe-active);
+  color: var(--basisfarbe); 
+}
+
+/* Ende navigation.css */

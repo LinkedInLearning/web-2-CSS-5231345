@@ -1,0 +1,266 @@
+/* Stylesheet für die Übungswebsite */
+/* 05-07-challenge (Stand 05-05e) */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+
+  /* Farbschema mit benutzerdefinierten Eigenschaften */
+  --basisfarbe: white; 
+  --kontrastfarbe: black; 
+   
+  --akzentfarbe: #07b; 
+  --hintergrund-hell: #def; 
+
+  --grau-sehr-hell: whitesmoke; 
+  --grau-hell: lightgray; 
+  --grau-mittel: silver; 
+  --grau-dunkel: dimgray; 
+
+    --linkfarbe-link: #05a; 
+  --linkfarbe-visited: #50a; 
+  --linkfarbe-hover-focus: #a50; 
+  --linkfarbe-active: #a05; 
+}
+
+body {
+  background-color: var(--basisfarbe);
+  color: var(--kontrastfarbe);
+  font-family: system-ui, sans-serif;
+  max-width: none; 
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.inside {
+  max-width: 600px; 
+  padding: 0 1rem; 
+  margin: auto; 
+}
+
+/* Klasse zum Ausblenden am Bildschirm */
+.visually-hidden {
+  position: absolute; 
+
+  width: 1px; 
+  height: 1px; 
+  overflow: hidden; 
+
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Stile für die Hyperlinks */
+a {
+  text-decoration-line: underline; 
+  text-decoration-style: solid; 
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 0.25em; 
+} 
+a:hover, a:focus {
+  text-decoration-style: dashed; 
+}
+a:active {
+  text-decoration-style: solid;
+}
+
+
+/* Stile für den Header */
+.site-header {
+  padding: 2rem 0;
+}
+
+.site-header p {
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+
+/* Stile für die Navigation */
+.site-nav {
+  background-color: var(--kontrastfarbe);
+  padding: 0; 
+  margin-bottom: 2rem; 
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.site-nav li {
+  flex: 1; 
+  max-width: 7rem;
+  border-left: 1px solid var(--basisfarbe); 
+}
+.site-nav li:last-child {
+  border-right: 1px solid var(--basisfarbe); 
+}
+
+.site-nav a {
+  display: block; 
+  color: var(--basisfarbe); 
+  text-decoration-line: none;
+  text-align: center;
+  padding: 0.5rem 1rem; 
+}
+.site-nav a[aria-current],
+.site-nav a:hover, 
+.site-nav a:focus {
+  background-color: var(--akzentfarbe);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+.site-nav a:active {
+  background-color: var(--linkfarbe-active);
+  color: var(--basisfarbe); 
+}
+
+/* Stile für den Inhalt */
+.site-content {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Links - Zustände  */
+.site-content a:link { color: var(--linkfarbe-link); }
+.site-content a:visited { color: var(--linkfarbe-visited); }
+.site-content a:hover, .site-content a:focus { color: var(--linkfarbe-hover-focus); }
+.site-content a:active { color: var(--linkfarbe-active); }
+
+.site-content a[target="_blank"]::after { content: "\00A0\2197"; }
+
+/* Links als Buttons */
+a.call-to-action {
+  display: block; 
+  max-width: 10rem; 
+  text-decoration: none; 
+
+  padding: 0.5rem 1rem; 
+  border: 1px solid currentColor;
+  margin-inline: auto; 
+}
+a.call-to-action:hover, a.call-to-action:focus {
+  background-color: var(--akzentfarbe); 
+  color: var(--basisfarbe); 
+  border: 1px solid var(--akzentfarbe); 
+}
+a.call-to-action:active {
+  background-color: var(--linkfarbe-active); 
+  color: var(--basisfarbe); 
+  border: 1px solid var(--linkfarbe-active); 
+}
+
+h1 {
+  line-height: normal;
+  font-weight: 500;
+}
+
+/* Flexible Grafiken  */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Liste mit Pfeil nach rechts als Aufzählungszeichen */
+ul.pfeil { list-style-type: "\2192\00a0"; }
+ul.pfeil li::marker { color: var(--akzentfarbe); }
+
+/* Beschriftungen und Zitate ohne Abstände */
+figure, blockquote  { 
+  margin: 0;
+}
+/* Nur wenn figcaption eine Bildbeschriftung ist */
+figure:has(img) figcaption {
+  text-align: center;
+  font-size: smaller;
+  background-color: var(--hintergrund-hell);
+  padding: 0.5rem 1rem;
+}
+
+/* Stile für den Abschnitte auf der Startseite */
+.infoboxen {
+  background-color: var(--hintergrund-hell);
+  padding: 3rem 1rem 2rem 1rem;
+  margin-block: 2rem;
+}
+.infobox {
+  text-align: center;
+  background-color: var(--basisfarbe);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kundenstimme {
+  background-color: var(--grau-sehr-hell);
+  color: var(--kontrastfarbe); 
+  padding: 1rem; 
+  border-left: 5px solid var(--akzentfarbe); 
+  margin-bottom: 1rem; 
+} 
+
+
+/* Stile für das Formular */
+form {
+  background-color: var(--grau-sehr-hell);
+  padding: 1rem;
+}
+label { 
+  display: block; 
+  color: var(--grau-dunkel); 
+  cursor: pointer;
+}
+form div { 
+  margin-bottom: 1rem; 
+}
+input, textarea {
+  border: 1px solid var(--grau-hell);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5rem; 
+}
+button {
+  background-color: var(--basisfarbe);
+  color: var(--kontrastfarbe); 
+  font-size: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--grau-hell); 
+  cursor: pointer;
+}
+button:hover, 
+button:focus {
+  background-color: var(--akzentfarbe);
+  border: 1px solid var(--akzentfarbe); 
+  color: var(--basisfarbe); 
+}
+button:active {
+  background-color: var(--linkfarbe-active);
+  color: var(--basisfarbe); 
+  border: 1px solid var(--linkfarbe-active); 
+}
+
+
+/* Stile für den Footer */
+.site-footer {
+  text-align: right; 
+  background-color: var(--kontrastfarbe);
+  color: var(--basisfarbe);
+  font-size: smaller;
+  padding: 0.5rem 0;
+}
+.site-footer a {
+  color: var(--basisfarbe);
+  text-decoration-line: none;
+}
+.site-footer a:hover, 
+.site-footer a:focus {
+  text-decoration-line: underline; 
+  text-decoration-style: solid; 
+}
+
+/* Ende style.css */

@@ -1,0 +1,116 @@
+/** =============================================
+  * Videokurs Webtechniken lernen   
+  * Stylesheet für die Übungswebsite  
+  * 
+  * Modul basis.css 
+  * Grundlegende Einstelungen und Formatierungen
+  * wird in style.css per @import eingebunden
+  =========================================== **/
+
+/** 
+  * Globale Einstellungen 
+  */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+
+html {
+  scroll-behavior: smooth;
+
+  /* Farbschema mit benutzerdefinierten Eigenschaften */
+  --basisfarbe: white; 
+  --kontrastfarbe: black; 
+   
+  --akzentfarbe: #07b; 
+  --hintergrund-hell: #def; 
+
+  --grau-sehr-hell: whitesmoke; 
+  --grau-hell: lightgray; 
+  --grau-mittel: silver; 
+  --grau-dunkel: dimgray; 
+
+    --linkfarbe-link: #05a; 
+  --linkfarbe-visited: #50a; 
+  --linkfarbe-hover-focus: #a50; 
+  --linkfarbe-active: #a05; 
+}
+
+
+body {
+  background-color: var(--basisfarbe);
+  color: var(--kontrastfarbe);
+  font-family: system-ui, sans-serif;
+  max-width: none; 
+  min-height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+/* Überschriften etwas weniger fett */
+h1, h2, h3 {
+  line-height: normal;
+  font-weight: 500;
+}
+
+
+/* Grundlegende Stile für die Hyperlinks */
+a {
+  text-decoration-line: underline; 
+  text-decoration-style: solid; 
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 0.25em; 
+} 
+a:hover, a:focus {
+  text-decoration-style: dashed; 
+}
+a:active {
+  text-decoration-style: solid;
+}
+
+
+/* Flexible Grafiken  */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Beschriftungen und Zitate ohne Abstände */
+figure, blockquote  { 
+  margin: 0;
+}
+
+/* Gilt nur, wenn figcaption eine Bildbeschriftung ist */
+figure:has(img) figcaption {
+  text-align: center;
+  font-size: smaller;
+  background-color: var(--hintergrund-hell);
+  padding: 0.5rem 1rem;
+}
+
+
+/** 
+  * Allgemeine Klassen  
+  */
+
+/* Listen mit Pfeil nach rechts */
+ul.pfeil { list-style-type: "\2192\00a0"; }
+ul.pfeil li::marker { color: var(--akzentfarbe); }
+
+
+/* Boxen am Bildschirm ausblenden */
+.visually-hidden {
+  position: absolute; 
+
+  width: 1px; 
+  height: 1px; 
+  overflow: hidden; 
+
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
+/* Ende basis.css */

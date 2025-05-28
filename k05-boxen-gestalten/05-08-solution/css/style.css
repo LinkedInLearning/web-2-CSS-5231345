@@ -1,0 +1,22 @@
+/** =============================================
+  * Videokurs Webtechniken lernen (05-08-solution) 
+  * Stylesheet für die Übungswebsite  
+  *  
+  * style.css  
+  * zentrales Stylesheet zum Importieren der Module 
+  * wird im HTML per <link> eingebunden
+  =========================================== **/
+
+
+@import url("basis.css"); 
+
+@import url("layout.css"); 
+
+@import url("navigation.css"); 
+
+@import url("content.css"); 
+
+@import url("forms.css"); 
+
+
+/* Ende style.css */
