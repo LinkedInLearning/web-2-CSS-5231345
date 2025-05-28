@@ -1,0 +1,15 @@
+menuburger.svg (iconfinder_menu_1814109.svg)
+menuclose.svg (iconfinder_close_1814098.svg) 
+
+changed color from #134563 to #ffffff inside the SVG file
+
+URL:
+https://www.iconfinder.com/iconsets/evil-icons-user-interface
+
+Creators: 
+Alexander Madyankin, Roman Shamin 
+
+License: 
+MIT (https://de.wikipedia.org/wiki/MIT-Lizenz)
+
+--- eof --- 
