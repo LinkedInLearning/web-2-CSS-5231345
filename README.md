@@ -8,7 +8,7 @@ Dies ist das Repository für den **LinkedIn Learning** Kurs `Grundkurs Webtechni
 In der zweiteiligen Kursreihe »Grundkurs Webtechniken« vermittelt Ihnen Peter Müller das gesamte Grundwissen, um moderne Webseiten planen, gestalten, programmieren und dauerhaft pflegen zu können - Sie müssen dazu über keinerlei Vorkenntnisse verfügen. In diesem zweiten Teil steht CSS (Cascading Style Sheets) im Mittelpunkt: Sehen und lernen Sie in vielen praktischen Übungen die wichtigsten CSS-Konzepte umzusetzen und HTML-Elemente zu erstellen und zu gestalten. Anhand von Code-Challenges am Ende eines Kapitels können Sie das Erlernte sofort testen und Ihre Lösung mit der angebotenen »Solution« vergleichen.
 
 
-## Installation
+## Übungsdateien herunterladen
 
 Sie können die Übungsdateien herunterladen, in dem Sie oben rechts auf den grünen Button »Code« klicken und im Dropdown-Menü dann die Option »Download ZIP« auswählen. 
 
