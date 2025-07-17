@@ -10,7 +10,7 @@ In der zweiteiligen Kursreihe »Grundkurs Webtechniken« vermittelt Ihnen Peter 
 
 ## Installation
 
-1. Klonen Sie das Repository in Ihre lokale Maschine unter Verwendung von terminal (Mac), CMD (Windows) oder ein anderes Werkzeug mit grafischer Bedienoberfläche wie SourceTree.
+Sie können die Übungsdateien herunterladen, in dem Sie oben rechts auf den grünen Button »Code« klicken und im Dropdown-Menü dann die Option »Download ZIP« auswählen. 
 
 
 ## Autor    
